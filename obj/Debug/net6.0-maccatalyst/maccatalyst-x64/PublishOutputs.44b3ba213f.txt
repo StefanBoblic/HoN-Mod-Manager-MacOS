@@ -1,4 +1,5 @@
 /Users/shum/Desktop/HonModManagerForMac/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../HonModManagerForMac.app/Contents/MonoBundle/icudt.dat
+/Users/shum/Desktop/HonModManagerForMac/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../HonModManagerForMac.app/Contents/MonoBundle/Ionic.Zip.dll
 /Users/shum/Desktop/HonModManagerForMac/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../HonModManagerForMac.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/shum/Desktop/HonModManagerForMac/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../HonModManagerForMac.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/shum/Desktop/HonModManagerForMac/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../HonModManagerForMac.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll

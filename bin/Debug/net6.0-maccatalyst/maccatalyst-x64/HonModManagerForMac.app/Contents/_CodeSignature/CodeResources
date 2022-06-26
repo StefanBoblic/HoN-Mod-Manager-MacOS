@@ -10,35 +10,15 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		lsQZIskZ9EbRBJB3dEZrRD5oWs8=
+		IWxN+0Bgi9RUK8LXZp2jwX/i1Bw=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
 		</data>
-		<key>Resources/OpenSans-Regular.ttf</key>
-		<data>
-		k0VrKWxe4lE1lZAdUrUCb52Nc28=
-		</data>
-		<key>Resources/OpenSans-Semibold.ttf</key>
-		<data>
-		Ldx6GkMB6FCGINTgIY7znxt1Mx8=
-		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
-		B4KsmCFROaxeh06URkMR6ym3goU=
-		</data>
-		<key>Resources/dotnet_bot.png</key>
-		<data>
-		qkxU+iGbyPD+MFU8asgxfkiGiQA=
-		</data>
-		<key>Resources/dotnet_bot@2x.png</key>
-		<data>
-		ODtR+AA4P2RJr26+WgZS5b7fKMk=
-		</data>
-		<key>Resources/dotnet_bot@3x.png</key>
-		<data>
-		UID9UoIVm1B34BJ4wPLOhyrvAH8=
+		7P4HzZhxvFLClO//dzZu3gOdp1E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -47,14 +27,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tuKRV7RwaJIHJiMz2uDmT8gVXE+QwmJMV4nHbh78D8Y=
+			1HHB4Q5ezYdCF+TE5ce2oI9plf/sAim7Om252SMXFhk=
 			</data>
 		</dict>
 		<key>MonoBundle/HonModManagerForMac.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S2hNamnNeC8O3Q5Na5j+fANAcr9/pyuz7JbluhcYshA=
+			c2i56aCDzuTJx9X66RjcDS2e9CfoFZyS1L73sFnJMuY=
+			</data>
+		</dict>
+		<key>MonoBundle/Ionic.Zip.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Oz5UFoLkjz/Shy+FoGJ42i8+eHfulW2om5DXMqHqoL0=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1391,7 +1378,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yUaE4keEv0ZgVwMuR6R3Xl+aqMXKOT5DakAtylHaV88=
+			xMKi6hm7uOgDvBx7q5iT+Ouh8SyqACEnVrMoqjfeKfM=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
@@ -1401,46 +1388,11 @@
 			n/NMp5DkQGppkjpBoyoV1mhEK36L/cuHFrOabOQafS0=
 			</data>
 		</dict>
-		<key>Resources/OpenSans-Regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tl7OHN/D52BMpjI4R9aX8VQoF1XFO1od+lZMHvU3xIs=
-			</data>
-		</dict>
-		<key>Resources/OpenSans-Semibold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Wj0G8EOuLoTef+HODHHGoGAMoKmXCxRPdZP25iMe+5Y=
-			</data>
-		</dict>
 		<key>Resources/appicon.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NSlVKvdePBIB6S1FW2x0cJEDo5CUh9w8q6zNQQU4jmk=
-			</data>
-		</dict>
-		<key>Resources/dotnet_bot.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sOLQrNqp6Sz0Cc5YxdPBiFdhmpSnbKwnfwZr5jAPV1g=
-			</data>
-		</dict>
-		<key>Resources/dotnet_bot@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yddp/GkkoduauHrkANKg0Ds8g16ANCkiSGuyL6PwFaQ=
-			</data>
-		</dict>
-		<key>Resources/dotnet_bot@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9JL8Paz/pxYM33w7MqZpLNvOyumKm9+ix+AwWXckuX4=
+			kkl5kspjfeTWeWfphR9QgaorxKrHauFN72lqKuo360g=
 			</data>
 		</dict>
 	</dict>
