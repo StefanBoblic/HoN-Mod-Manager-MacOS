@@ -1,0 +1,1 @@
+# HoN-Mod-Manager-MacOS
