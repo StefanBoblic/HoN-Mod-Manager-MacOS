@@ -1,13 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:model="clr-namespace:HonModManagerForMac.Model"
                 x:Class="HonModManagerForMac.MainPage">
 
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="Apply Mods"
+                            Command="{Binding ApplyModsCommand}" />
+            <MenuFlyoutItem Text="Apply Mods and Launch HoN"
+                            Command="{Binding ApplyModsAndLaunchHoNCommand}" />
+            <MenuFlyoutItem Text="Unapply All Mods"
+                            Command="{Binding UnapplyModsCommand}" />
+            <MenuFlyoutItem Text="Open Mods Folder"
+                            Command="{Binding OpenModsFolderCommand}" />
+            <MenuFlyoutItem Text="Exit"
+                            Command="{Binding ExitCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="Options">
+            <MenuFlyoutItem Text="Change HoN Path"
+                                Command="{Binding ChangePathCommand}"/>
+            <MenuFlyoutItem Text="Enter HoN Path manually"
+                                Command="{Binding EnterPathManuallyCommand}"/>
+            <MenuFlyoutItem Text="CL Arguments for Launching HoN"
+                                Command="{Binding ClArgumentsCommand}"/>
+            <MenuFlyoutItem Text="Unregister .honmod File Extension"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
     <ListView x:Name="myListView"
-              ItemsSource="{Binding MainPage}"
               ItemSelected="myListView_ItemSelected">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type model:Modification}">
+                <model:Modification Name="Joposhnik"/>
+                <model:Modification Version="v(1.0)"/>
+            </x:Array>
+        </ListView.ItemsSource>
         <ListView.ItemTemplate>
-            <DataTemplate>
+            <DataTemplate x:DataType="model:Modification">
                 <ViewCell>
                     <Grid Padding="10">
                         <Grid.RowDefinitions>
@@ -19,18 +49,19 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Image Grid.RowSpan="2"
-                           Source="{Binding ImageUrl}"
+                           Source="{Binding Icon}"
                            Aspect="AspectFill"
-                           HeightRequest="60"
-                           WidthRequest="60" />
-                        <Label Grid.Column="1"
-                           Text="{Binding ModName}"
-                           FontAttributes="Bold" />
-                        <Label Grid.Row="1"
-                           Grid.Column="1"
-                           Text="{Binding ModVersion}"
-                           FontAttributes="Italic"
-                           VerticalOptions="End" />
+                           HeightRequest="50"
+                           WidthRequest="50" />
+                        <Label Grid.ColumnSpan="2" FontSize="24" VerticalOptions="Center">
+                            <Label.Text>
+                                <MultiBinding StringFormat="{}{0} {1}">
+                                    <Binding Path="Name"/>
+                                    <Binding Path="Version"/>
+                                </MultiBinding>
+                            </Label.Text>
+
+                        </Label>
                         <!--<Button 
                             Text="Pick Folder"
                             FontAttributes="Bold"

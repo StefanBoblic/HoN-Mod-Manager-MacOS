@@ -11,6 +11,9 @@ using System.Xml;
 using Ionic.Zip;
 using Ionic.Zlib;
 using HonModManagerForMac.Interfaces;
+using System.Collections.ObjectModel;
+using HonModManagerForMac.Model;
+using HonModManagerForMac.Utils;
 
 namespace HonModManagerForMac;
 
@@ -24,16 +27,16 @@ public partial class MainPage : ContentPage
 
     //dictionary with all mods currently set to enabled via the UI
     //key: mod name, value: version string
-    private readonly Dictionary<string, string> m_displayNames = new Dictionary<string, string>();
-    private int m_enabledCount;
+    private readonly Dictionary<string, string> displayNamesList = new Dictionary<string, string>();
+    private int enabledModsCount;
 
-
+    
     //collection of all mods loaded by UpdateList()
-    private readonly List<Modification> m_mods = new List<Modification>();
+    public ObservableCollection<Modification> modsList { get; set; } = new ObservableCollection<Modification>();
 
-    private string m_runGameArguments = "";
-    private string m_runGameFile = "";
-    private string m_gameVersion = "";
+    private string runGameArguments = "";
+    private string runGameFile = "";
+    private string gameVersion = "";
 
     private Version Version => Assembly.GetExecutingAssembly().GetName().Version;
 
@@ -89,7 +92,7 @@ public partial class MainPage : ContentPage
     //#region " Mod Updating Business "
 
     //this list will hold references to all running mod updaters
-    private readonly List<ModUpdater> m_modUpdaters = new List<ModUpdater>();
+    private readonly List<ModUpdater> modUpdatersList = new List<ModUpdater>();
 
     //private bool m_updatingMode;
 
@@ -186,12 +189,12 @@ public partial class MainPage : ContentPage
     //    }
     //}
 
-    ////private static Bitmap UpdatingIcon(Bitmap b)
-    ////{
-    ////    //paints updating.png on top of the given bitmap
-    ////    Graphics.FromImage(b).DrawImageUnscaled(Resources.updating, 0, 0);
-    ////    return b;
-    ////}
+    //private static Image UpdatingIcon(Image b)
+    //{
+    //    //paints updating.png on top of the given image
+    //    Graphics.FromImage(b).DrawImageUnscaled(Resources.updating, 0, 0);
+    //    return b;
+    //}
 
     //#endregion
 

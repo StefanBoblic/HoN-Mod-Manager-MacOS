@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace HonModManagerForMac
+﻿namespace HonModManagerForMac.Utils
 {
     public static class ExtensionMethods
     {

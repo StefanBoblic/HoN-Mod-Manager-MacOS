@@ -1,11 +1,7 @@
-﻿#region Using Directives
-
-using System.Reflection;
+﻿using System.Reflection;
 using Microsoft.Win32;
 
-#endregion
-
-namespace HonModManagerForMac
+namespace HonModManagerForMac.Utils
 {
     public static class RegistryHelper
     {
@@ -55,7 +51,7 @@ namespace HonModManagerForMac
                 Registry.ClassesRoot.CreateSubKey("HoN_ModMan").SetValue("", "HoN Modification",
                     RegistryValueKind.String);
                 Registry.ClassesRoot.CreateSubKey("HoN_ModMan\\shell\\open\\command").SetValue("",
-                    Assembly.GetAssembly(typeof (MauiProgram)).CodeBase + //???????
+                    Assembly.GetAssembly(typeof(MauiProgram)).CodeBase + //???????
                     " \"%l\"",
                     RegistryValueKind.String);
             }

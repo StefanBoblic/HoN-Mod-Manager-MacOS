@@ -38,11 +38,15 @@
 	<ItemGroup>
 	  <None Remove="Ionic.Zip" />
 	  <None Remove="Interfaces\" />
+	  <None Remove="Model\" />
+	  <None Remove="Utils\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Ionic.Zip" Version="1.9.1.8" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="FolderPicker\" />
+	  <Folder Include="Model\" />
+	  <Folder Include="Utils\" />
 	</ItemGroup>
 </Project>
