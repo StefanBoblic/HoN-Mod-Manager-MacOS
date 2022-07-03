@@ -60,5 +60,58 @@ namespace HonModManagerForMac.Model
         public bool Enabled;
 
         public bool IsUpdating => !(Updater == null || Updater.Status >= ModUpdaterStatus.NoUpdateInformation);
+
+        public Modification(bool applied,
+            Dictionary<string, string> applyAfter,
+            Dictionary<string, string> applyBefore,
+            List<Modification> applyFirst,
+            string appVersion,
+            string author,
+            string description,
+            string file,
+            string fixedName,
+            Image icon,
+            int imageListIdx,
+            Dictionary<string, string> incompatibilities,
+            int index,
+            bool marked,
+            string mMVersion,
+            string name,
+            Dictionary<string, string> requirements,
+            string updateCheck,
+            string updateDownload,
+            ModUpdater updater,
+            string version,
+            string webLink,
+            bool enabled)
+        {
+            Applied = applied;
+            ApplyAfter = applyAfter;
+            ApplyBefore = applyBefore;
+            ApplyFirst = applyFirst;
+            AppVersion = appVersion;
+            Author = author;
+            Description = description;
+            File = file;
+            FixedName = fixedName;
+            Icon = icon;
+            ImageListIdx = imageListIdx;
+            Incompatibilities = incompatibilities;
+            Index = index;
+            Marked = marked;
+            MMVersion = mMVersion;
+            Name = name;
+            Requirements = requirements;
+            UpdateCheck = updateCheck;
+            UpdateDownload = updateDownload;
+            Updater = updater;
+            Version = version;
+            WebLink = webLink;
+            Enabled = enabled;
+        }
+
+        public Modification()
+        {
+        }
     }
 }

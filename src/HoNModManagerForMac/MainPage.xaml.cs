@@ -30,9 +30,8 @@ public partial class MainPage : ContentPage
     private readonly Dictionary<string, string> displayNamesList = new Dictionary<string, string>();
     private int enabledModsCount;
 
-    
     //collection of all mods loaded by UpdateList()
-    public ObservableCollection<Modification> modsList { get; set; } = new ObservableCollection<Modification>();
+    public ObservableCollection<Modification> ModsList { get; set; } = new ObservableCollection<Modification>();
 
     private string runGameArguments = "";
     private string runGameFile = "";
