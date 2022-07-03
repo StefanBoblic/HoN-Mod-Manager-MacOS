@@ -6,7 +6,7 @@ using Microsoft.Win32;
 
 #endregion
 
-namespace HonModManagerForMac
+namespace HonModManagerForMac.Utils
 {
     public class GameHelper
     {

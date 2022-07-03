@@ -1,11 +1,8 @@
-﻿#region Using Directives
-
-using System;
+﻿using System;
 using System.Text;
 
-#endregion
 
-namespace HonModManagerForMac
+namespace HonModManagerForMac.Utils
 {
     internal class CustomVersion : IComparable<CustomVersion>
     {
